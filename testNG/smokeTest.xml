@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke Test" verbose="1">
+    <parameter name="googleUrl" value="https://www.google.com"></parameter>
+    <parameter name="doitUrl" value="https://www.letskodeit.com/practice"></parameter>
+    <parameter name="sauceUrl" value="https://www.saucedemo.com/"></parameter>
+    <!-- <test name="google">
+        <classes>
+            <class name="automatedScripts.GoogleTEst"/>
+        </classes>
+    </test>
+
+    <test name="DifferentActions">
+        <parameter name="carDropdown" value="Benz"></parameter>
+        <classes>
+            <class name="automatedScripts.DifferentAction"/>
+        </classes>
+    </test>-->
+    
+    <test name="LoginPage">
+        <parameter name="username" value="standard_user"></parameter>
+        <parameter name="passwordUser" value="secret_sauce"></parameter>
+        <parameter name="invalidPassword" value="12345"></parameter>
+        <classes>
+            <class name="automatedScripts.SauceDemo"></class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Actions" verbose="1">
+    <parameter name="dockerUrl" value="https://www.docker.com"></parameter>
+    <parameter name="worlMeterUrl" value="https://www.worldometers.info/coronavirus/"></parameter>
+
+    <test name="do Different Browser Action">
+        <classes>
+            <class name="diffActions.PerformActions"></class>
+        </classes>
+    </test>
+</suite>
