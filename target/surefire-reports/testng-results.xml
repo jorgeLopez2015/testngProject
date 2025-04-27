@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-19T09:35:33 CST" name="Actions" finished-at="2025-04-19T09:35:43 CST" duration-ms="10038">
+  <suite started-at="2025-04-27T10:49:43 CST" name="Actions" finished-at="2025-04-27T10:50:02 CST" duration-ms="19093">
     <groups>
     </groups>
-    <test started-at="2025-04-19T09:35:33 CST" name="do Different Browser Action" finished-at="2025-04-19T09:35:43 CST" duration-ms="10038">
+    <test started-at="2025-04-27T10:49:43 CST" name="do Different Browser Action" finished-at="2025-04-27T10:50:02 CST" duration-ms="19093">
       <class name="diffActions.PerformActions">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:diffActions.PerformActions@15ff3e9e]" started-at="2025-04-19T09:35:33 CST" name="setUp" finished-at="2025-04-19T09:35:38 CST" duration-ms="5064" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:diffActions.PerformActions@3ce1e309]" started-at="2025-04-27T10:49:43 CST" name="setUp" finished-at="2025-04-27T10:49:50 CST" duration-ms="7341" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="doDifferentBrowserAction()[pri:0, instance:diffActions.PerformActions@15ff3e9e]" started-at="2025-04-19T09:35:38 CST" name="doDifferentBrowserAction" finished-at="2025-04-19T09:35:42 CST" duration-ms="4637" status="PASS">
+        <test-method signature="doDifferentBrowserAction()[pri:0, instance:diffActions.PerformActions@3ce1e309]" started-at="2025-04-27T10:49:50 CST" name="doDifferentBrowserAction" finished-at="2025-04-27T10:50:01 CST" duration-ms="11213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doDifferentBrowserAction -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:diffActions.PerformActions@15ff3e9e]" started-at="2025-04-19T09:35:42 CST" name="tearDown" finished-at="2025-04-19T09:35:43 CST" duration-ms="289" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:diffActions.PerformActions@3ce1e309]" started-at="2025-04-27T10:50:01 CST" name="tearDown" finished-at="2025-04-27T10:50:02 CST" duration-ms="508" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

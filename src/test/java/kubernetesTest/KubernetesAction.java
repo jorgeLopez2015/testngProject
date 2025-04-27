@@ -33,7 +33,7 @@ public class KubernetesAction {
         spark.config().setDocumentTitle("Kubernetes Test");
         spark.config().setReportName("Testing the Kubernetes page");
         spark.config().setTheme(Theme.STANDARD);
-        logger = extent.createTest("Testing the Kubernetes app using Selenium TestNG")
+        logger = extent.createTest("Testing the Kubernetes app using Selenium TestNG");
         KH = new KubernetesHome();
         driver = new ChromeDriver();
         driver.manage().window().maximize();

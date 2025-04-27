@@ -144,6 +144,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Actions&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;parameter name=&quot;dockerUrl&quot; value=&quot;https://www.docker.com&quot;/&gt;
+  &lt;parameter name=&quot;worlMeterUrl&quot; value=&quot;https://www.worldometers.info/coronavirus/&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;do Different Browser Action&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;diffActions.PerformActions&quot;/&gt;
@@ -190,12 +191,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'doDifferentBrowserAction')
 data.setCell(0, 2, 'diffActions.PerformActions')
-data.setCell(0, 3, 4637);
+data.setCell(0, 3, 11213);
 window.suiteTableData['Actions']= { tableData: data, tableDiv: 'times-div-Actions'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Actions">
               </div> <!-- times-div-Actions -->
             </div> <!-- times-div -->
@@ -228,11 +229,11 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">doDifferentBrowserAction</span>
-                <span class="method-start">5083 ms</span>
+                <span class="method-start">7350 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9725 ms</span>
+                <span class="method-start">18566 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
