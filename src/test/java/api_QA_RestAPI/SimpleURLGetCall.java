@@ -75,4 +75,24 @@ public class SimpleURLGetCall {
             Assert.assertEquals(first_name, "Michael");
         }catch (Exception e){e.printStackTrace();}
     }
+
+    @Test
+    public void printingEmailsReqres(){
+        try{
+            Response res = RestAssured.given().params("page", 2).when().get("https://reqres.in/api/users");
+            int status_code = res.getStatusCode();
+            System.out.println("Status code is: "+status_code);
+            Assert.assertEquals(status_code, 200);
+            String response = res.asString();
+            JsonPath json_path_obj = new JsonPath(response).using(JsonPathConfig.jsonPathConfig());
+            //int totalEmail = response.getBody().jsonPath().getList("data.email").size();
+            int totalEmail = res.getBody().jsonPath().getList("data.email").size();
+            System.out.println("totalEmail Count is ==>"+totalEmail);
+            for(int a=0;a<totalEmail;a++){
+                String emailid = res.getBody().jsonPath().getString("data.email["+a+"]");
+                System.out.println("Email ID is ===>"+emailid);
+            }
+
+        }catch (Exception e){e.printStackTrace();}
+    }
 }
